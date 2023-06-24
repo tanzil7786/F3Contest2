@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --background-color: #000;
+    --font-color: #fff;
+}
+
+body{
+    font-size: 62.5%;
+    font-family: 'Inter', sans-serif;
+    background-color: var(--background-color);
+    color: var(--font-color);
+}
+
+.header-section{
+    display: flex;
+    padding-left: 1rem;
+    align-items: center;
+    justify-content: space-between;
+    height: 3rem;
+    font-size: 1rem;
+}
+
+.signing-info{
+    display: flex;
+    padding-right: 2rem;
+    gap:1.8rem;
+}
+
+.signup, .profile{
+    cursor: pointer;
+    padding: 0.3rem;
+}
+
+.signup:hover, .profile:hover{
+    background-color: #bbb6b6d8;
+    color: #000;
+    padding: 0.3rem;
+    border-radius: 0.3rem;
+}
+
+/* signupdetails */
+.signup-details{
+    /* border: 1px solid white; */
+    width: 70%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+.form-heading{
+    font-size: 2rem;
+    padding-bottom: 2rem;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+}
+
+.form > input {
+   background-color: var(--background-color);
+   color: #fff;
+   padding: 0.8rem 0;
+   margin-bottom: 1rem;
+   border: none;
+   border-bottom: 1px solid #fff;
+   font-size: 1rem;
+}
+
+.form > input::placeholder {
+    color: #fff;
+}
+
+.form > input:focus{
+    outline:none!important ;
+}
+
+.message{
+    font-size: 1.2rem;
+    padding: 1rem 0;
+    height: 5rem;
+}
+
+.error{
+    color: #f00;
+}
+
+.success{
+    color: #0f0;
+}
+
+#submit-btn{
+    cursor: pointer;
+    width: 7rem;
+    height: 2.5rem;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    border: none;
+}
+
+#submit-btn:hover{
+    opacity:.8;
+}
+
+
+/* profile page  */
+.display-signup-details{
+    padding: 5rem;
+}
+
+.profile-heading{
+    font-size: 2rem;
+}
+
+.profile-name, .profile-email, .profile-password{
+    padding-top: 1.8rem;
+    font-size: 1.3rem;
+}
+
+.profile-password{
+    padding-bottom: 2rem;
+}
+#signoutbtn{
+    cursor: pointer;
+    width: 7rem;
+    height: 2.5rem;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    border: none;
+}
+
+#signoutbtn:hover{
+    opacity:.8;
+}
